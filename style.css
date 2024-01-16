@@ -172,7 +172,37 @@ nav ul li a{
 .destination-description{
     margin: 20px 0px;
 }
+/*
+.grid-item-1{
+    grid-area: grid-item-1;
+}
+.grid-item-2{
+    grid-area: grid-item-2;
+}
+.grid-item-3{
+    grid-area: grid-item-3;
+}
+.grid-item-4{
+    grid-area: grid-item-4;
+}
+.grid-item-5{
+    grid-area: grid-item-5;
+}
+.grid-item-6{
+    grid-area: grid-item-6;
+}
+.grid-item-7{
+    grid-area: grid-item-7;
+}
 
+.grid-area{
+    display: grid;
+    grid-template-areas: 
+    "grid-item-1    grid-item-2 "
+    "grid-item-3    grid-item-4"
+    "grid-item-5    grid-item-6";
+}
+*/
 .item-1 img, .item-2 img, .item-3 img{
     width: 100%;
 }
@@ -197,7 +227,7 @@ nav ul li a{
     gap: 25px;
 }
 .item-3{
-    height: 300px;
+    
     display: flex;
     gap: 25px;
     
@@ -211,12 +241,13 @@ nav ul li a{
 
 .item-3 .image-1{
     width: 40%;
-    height: 300px;
+    
 }
 .item-3 .image-2{
     width: 60%;
-    height: 300px;
+    
 }
+
 
 
     
@@ -276,7 +307,7 @@ nav ul li a{
 .newsletter{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 form{
@@ -305,35 +336,40 @@ form #btn{
     color: white;
     margin-bottom: 35px;
 }
-.newwleter-image{
+.newsleter-box{
+    border-radius: 16px;
+    background-image: url('images/rectangle8.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 60%;
+    height: 420px;
 }
+
 
 .travel{
     width: 50%;
-    padding: 20px 30px;
+    padding: 20px 0px;
     border-radius: 16px;
-    /*transform: rotate(-50deg) translateX(150px) translateY(150px);
-    transform-origin: bottom left;*/
     background-color: var(--primary-color);
     color: #FFF;
     text-align: center;
+    transform:  translateY(330px) translateX(340px) rotate(-15deg);
+    transform-origin: bottom left;
+    
 }
-.newsletter-image img{
-    height: 100%;
-    border-radius: 16px;
-}
+
 
 /*  style  Footer  */
 
 footer{
     background: rgba(19, 19, 24, 0.05);
-    height: 502px;
+    
 }
 
 .footer-container{
-    margin: 100px auto;
-    padding: 100px 0px;
+    margin-top: 100px;
+    padding: 50px 0px;
     
     text-align: center;
 
@@ -349,12 +385,14 @@ footer{
     gap: 15px;
 }
 .footer-container p{
-    margin: 20px;
+    margin: 20px 0px 30px 0px;
 }
 
 h4{
+    border-top: 0.5px solid rgba(19, 19, 24, 0.10);
     color: #131318;
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-top: 30px;
     font-size: 16px;
     font-weight: 300;
 }
@@ -368,7 +406,7 @@ h4{
         margin: 50px 15px;
     }
     .choose-container{
-        margin-top: 600px;
+        
     }
     
     .choose-option,
@@ -411,6 +449,20 @@ h4{
         flex-direction: column;
         gap: 50px;
     }
+
+    .item-3 .image-2,.item-3 .image-1{
+        width: 100%;
+    }
+
+    .newsleter-box{
+        background-position: cover;
+    }
+    .travel{
+        width: 60%;
+        transform: translateX(160px) translateY(330px) rotate(-15deg);
+        transform-origin: bottom left;
+    }
+
     .tour-content,
     .tour-image,
     .tour-image img,
@@ -419,10 +471,9 @@ h4{
     .catagory-3,
     .choose-content,
     footer,
+    .newsleter-box,
     .Destination-container,
     form,
-    .newwleter-image,
-    .newwleter-image img,
     .image-1,
     .image-2{
         width: 100%;
