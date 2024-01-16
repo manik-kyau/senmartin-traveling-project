@@ -18,9 +18,8 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 .container{
-    border: 2px solid green;
     max-width: 1140px;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 .title{
     color: #131318;
@@ -174,35 +173,51 @@ nav ul li a{
     margin: 20px 0px;
 }
 
-.grid-image-1 img, .grid-image-2 img, .grid-image-3 img{
+.item-1 img, .item-2 img, .item-3 img{
     width: 100%;
+}
+.image-item{
+    margin-top: 20px;
+}
+
+.item-1{
+    max-height: 300px;
+    display: flex;
+    gap: 25px;
+}
+
+.item-2 div{
+    height: 286px;
+}
+.item-2 div img{
+    height: 286px;
+}
+.item-2{
+    display: flex;
+    gap: 25px;
+}
+.item-3{
+    height: 300px;
+    display: flex;
+    gap: 25px;
+    
+}
+.item-3 .image-1 img{
     height: 100%;
-
 }
-.grid-image{
-    margin-top: 25px;
-}
-
-.grid-image-1{
-    max-height: 300px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+.item-3 .image-2 img{
+    height: 100%;
 }
 
-.grid-image-2{
-    max-height: 285px;
-    display: grid;
-    grid-template-columns:  362px 462px 262px;
-    gap: 25px;
+.item-3 .image-1{
+    width: 40%;
+    height: 300px;
 }
-.grid-image-3{
-    max-height: 300px;
-    display: grid;
-    grid-template-columns: 455px 657px;
-    gap: 25px;
-   
+.item-3 .image-2{
+    width: 60%;
+    height: 300px;
 }
+
 
     
 /*   choose sections    */
@@ -290,11 +305,16 @@ form #btn{
     color: white;
     margin-bottom: 35px;
 }
+.newwleter-image{
+    width: 60%;
+}
 
 .travel{
+    width: 50%;
     padding: 20px 30px;
     border-radius: 16px;
-    transform:
+    /*transform: rotate(-50deg) translateX(150px) translateY(150px);
+    transform-origin: bottom left;*/
     background-color: var(--primary-color);
     color: #FFF;
     text-align: center;
@@ -302,7 +322,6 @@ form #btn{
 .newsletter-image img{
     height: 100%;
     border-radius: 16px;
-    
 }
 
 /*  style  Footer  */
@@ -312,16 +331,66 @@ footer{
     height: 502px;
 }
 
+.footer-container{
+    margin: 100px auto;
+    padding: 100px 0px;
+    
+    text-align: center;
+
+}
+.footer-container .logo img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer-container .logo{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer-container p{
+    margin: 20px;
+}
+
+h4{
+    color: #131318;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer-icon{
+    padding: 0px 15px;
+}
+
 /*   Responsive for  Mobile   */
 @media screen and (max-width: 576px) {
     .container{
         margin: 50px 15px;
     }
-    ul{
+    .choose-container{
+        margin-top: 600px;
+    }
+    
+    .choose-option,
+    .Destination-container{
+        margin: 0px;
+    }
+    .logo{
+        align-items: center;
+    }
+    .logo img{
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .logo h1{
+        font-size: 25px !important;
+    }
+    ul li{
         display: none;
     }
-    .nav-icon{
+    #nav-icon{
         display: block;
+        align-items: center;
     }
     .banner{
         padding: 30px 10px 60px 10px;
@@ -330,14 +399,32 @@ footer{
     .headding{
         font-size: 30px !important;
     }
-    .quest-box{
-        flex-direction:  column;
+    .item-2 div img{
+        height: 286px !important;
+    }
+    .quest-box,
+    .choose-catagory,
+    .newsletter, .item-1,.item-2,.item-3{
+        flex-direction: column;
     }
     .tours-container{
         flex-direction: column;
         gap: 50px;
     }
-    .tour-content, .tour-image, .tour-image img{
+    .tour-content,
+    .tour-image,
+    .tour-image img,
+    .catagory-1,
+    .catagory-2,
+    .catagory-3,
+    .choose-content,
+    footer,
+    .Destination-container,
+    form,
+    .newwleter-image,
+    .newwleter-image img,
+    .image-1,
+    .image-2{
         width: 100%;
     }
     .title{
@@ -346,5 +433,5 @@ footer{
     .description{
         font-size: 16px !important;
     }
-    
+   
 }
