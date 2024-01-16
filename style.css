@@ -130,6 +130,7 @@ nav ul li a{
     background-color: var(--primary-color);
     color: white;
     padding: 15px 20px;
+    cursor: pointer;
 }
 
 /*  Style  Tour Section   */
@@ -216,6 +217,21 @@ nav ul li a{
     gap: 25px;
 }
 
+.image-container{
+    position: relative;
+    width: 100%;
+    
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+
 .item-2 div{
     height: 286px;
 }
@@ -247,8 +263,6 @@ nav ul li a{
     width: 60%;
     
 }
-
-
 
     
 /*   choose sections    */
@@ -337,13 +351,8 @@ form #btn{
     margin-bottom: 35px;
 }
 .newsleter-box{
-    border-radius: 16px;
-    background-image: url('images/rectangle8.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 60%;
-    height: 420px;
+    position: relative;
+    width: 100%;
 }
 
 
@@ -354,8 +363,11 @@ form #btn{
     background-color: var(--primary-color);
     color: #FFF;
     text-align: center;
-    transform:  translateY(330px) translateX(340px) rotate(-15deg);
+    transform:   rotate(-20deg);
     transform-origin: bottom left;
+    position: absolute;
+    top: 78%;
+    left: 39%;
     
 }
 
@@ -405,10 +417,7 @@ h4{
     .container{
         margin: 50px 15px;
     }
-    .choose-container{
-        
-    }
-    
+   
     .choose-option,
     .Destination-container{
         margin: 0px;
@@ -454,13 +463,15 @@ h4{
         width: 100%;
     }
 
-    .newsleter-box{
-        background-position: cover;
+    .newsleter-box img{
+        width: 100%;
     }
     .travel{
         width: 60%;
-        transform: translateX(160px) translateY(330px) rotate(-15deg);
+        transform:  rotate(-15deg);
         transform-origin: bottom left;
+        top: 64%;
+        left: 42%;
     }
 
     .tour-content,
@@ -483,6 +494,9 @@ h4{
     }
     .description{
         font-size: 16px !important;
+    }
+    .btn-primary{
+        padding: 12px 20px;
     }
    
 }
