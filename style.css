@@ -57,6 +57,18 @@ nav .logo h1{
     font-size: 35px;
     font-weight: 800;
 }
+#icon{
+    display: none;
+}
+.nav-icon{
+    float: right;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    color:indigo;
+    position: absolute;
+    left: 92%;
+}
 
 nav ul{
     display: flex;
@@ -72,15 +84,6 @@ nav ul li a{
     font-weight: 400;
 }
 
-#nav-icon{
-    float: right;
-    font-size: 20px;
-    display: none;
-    cursor: pointer;
-    color:indigo;
-    position: absolute;
-    left: 92%;
-}
 
 /* style Banner section */ 
 
@@ -473,27 +476,23 @@ h4{
         rgb(0, 0, 0,0.8)50%);
         top: 75px;
         right: -5px;
-        left: 100%;
         flex-direction: column;
         gap: 0px;
         border-radius: 16px;
-        
-        
+        transition: all .5s;
+        display: none;
     }
     nav ul li{
         padding: 5px 0px;
         border-bottom: 1px solid rgb(100, 94, 94);
     }
-    #nav-icon{
+    .nav-icon{
         display: block;
         float: right;
     }
-    #nav-icon:hover nav ul{
-        display: block;
 
-    }
-    #nav-icon:checked ~ nav ul{
-       left: 0px;
+    #icon:hover nav ul{
+
     }
 
     nav ul li a{
